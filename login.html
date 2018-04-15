@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        font:16px "微软雅黑 Light" bold;
+        color: black;
+    }
+
+    .container{
+    background: url("image/logo/bc.jpg") no-repeat 0px -190px ;
+    width: 750px;
+    height: 340px;
+        /*padding-top: 20px;*/
+
+}
+    .main{
+        margin-left: 400px;
+        margin-right: 30px;
+    }
+
+    .head{
+        width: 300px;
+        padding: 25px 0;
+        float: left;
+    }
+    /*头部区域*/
+    .head a{
+        float: right;
+    }
+
+    /*输入框*/
+    .img{
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 300px;
+        border: 1px solid lightgray;
+        clear: both;
+        margin-bottom: 20px;
+        padding: 5px;
+        background-color: white;
+    }
+    .img img{
+        /*height: 30px;*/
+        width: 25px;
+        vertical-align: top ;
+
+    }
+    .img img+input{
+        border: 0;
+        height: 25px;
+        width: 210px;
+    }
+    input:hover{
+        outline: none;
+    }
+    /*选择框*/
+    .choose{
+        width: 300px;
+    }
+    .choose[type="radio"]{
+        box-sizing: border-box;
+        float: left;
+        font-size: 12px;
+    }
+    .choose .span{
+        font-size: 12px;
+        float: right;
+    }
+    .choose span a{
+        text-decoration: none;
+        color: black;
+        /*float: right;*/
+    }
+    input[type="submit"]{
+        display: none;
+    }
+    p{
+        height: 40px;
+        width: 300px;
+        background-color: #4dd5ff;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        margin: 20px 0;
+    }
+    /*底部*/
+    .foot{
+        margin: 20px 0;
+        width: 300px;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        float: left;
+        /*width: 260px;*/
+    }
+    ul li{
+        display: inline-block;
+        height: 20px;
+        margin-left: 2px;
+    }
+    ul li img{
+        vertical-align: top;
+    }
+    .last{
+        float: right;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+</style>
+
+<body>
+
+<div class="container">
+    <!--内容区域-->
+    <div class="main">
+        <!--头部区域-->
+        <div class="head">
+            <span>账号登录</span>
+            <a style="font-size: 12px">手机快捷登录</a>
+        </div>
+        <!--输入框-->
+        <div class="img">
+            <img src="image/logo/inputl.jpg" alt="">
+            <input type="text" placeholder="手机/邮箱/优酷土豆账号">
+        </div>
+        <div class="img">
+            <img src="image/logo/input.jpg" alt="">
+            <input type="password" placeholder="登录密码">
+        </div>
+        <!--选择框-->
+        <div class="choose">
+            <input type="radio" checked><span style="font-size: 12px">记住我</span>
+            <span class="span"><a href="#">忘记密码</a>|<a href="">帮助</a></span>
+        </div>
+        <input type="submit" value="登录">
+        <p>登录</p>
+        <div class="foot">
+            <ul>
+                <span style="font-size: 12px;">其他方式：</span>
+                <li><a><img src="image/logo/qq_C.png" alt=""></a></li>
+                <li><a><img src="image/logo/sina_weibo_C.png" alt=""></a></li>
+                <li><a><img src="image/logo/alipay_C.png" alt=""></a></li>
+                <li><a><img src="image/logo/taobao_C.png" alt=""></a></li>
+                <li><a><img src="image/logo/wechat_C.png" alt=""></a></li>
+            </ul>
+            <a class="last">注册</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
